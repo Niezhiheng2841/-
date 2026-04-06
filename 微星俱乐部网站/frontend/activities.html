@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="中国微星俱乐部活动中心 - 查看最新活动信息">
+    <title>活动中心 - 中国微星俱乐部</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activities.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="微星俱乐部" class="logo-img">
+                        <span class="logo-text">中国微星俱乐部</span>
+                    </a>
+                </div>
+                <button class="nav-toggle" aria-label="切换导航菜单">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">首页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="activities.html" class="nav-link">活动中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="members.html" class="nav-link">会员专区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">联系我们</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#login" class="btn btn-login">登录</a>
+                    <a href="#register" class="btn btn-register">注册</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">活动中心</h1>
+                <p class="page-subtitle">发现精彩活动，参与社区互动</p>
+            </div>
+        </section>
+
+        <section class="activity-filters">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">全部活动</button>
+                        <button class="filter-tab" data-filter="ongoing">进行中</button>
+                        <button class="filter-tab" data-filter="upcoming">即将开始</button>
+                        <button class="filter-tab" data-filter="ended">已结束</button>
+                    </div>
+                    <div class="filter-options">
+                        <select id="activityType" class="filter-select">
+                            <option value="all">所有类型</option>
+                            <option value="online">线上活动</option>
+                            <option value="offline">线下活动</option>
+                            <option value="competition">比赛竞技</option>
+                            <option value="experience">产品体验</option>
+                        </select>
+                        <select id="activityLocation" class="filter-select">
+                            <option value="all">所有地区</option>
+                            <option value="beijing">北京</option>
+                            <option value="shanghai">上海</option>
+                            <option value="guangzhou">广州</option>
+                            <option value="shenzhen">深圳</option>
+                            <option value="online">线上</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activities-list">
+            <div class="container">
+                <div class="activities-grid">
+                    <article class="activity-card" data-status="ongoing" data-type="competition" data-location="online">
+                        <div class="activity-image">
+                            <img src="images/activity-1.jpg" alt="春季电竞大赛">
+                            <span class="activity-badge ongoing">进行中</span>
+                            <span class="activity-type">比赛竞技</span>
+                        </div>
+                        <div class="activity-content">
+                            <h3 class="activity-title">2026春季电竞大赛</h3>
+                            <div class="activity-meta">
+                                <span class="activity-date">📅 2026-04-01 至 2026-04-30</span>
+                                <span class="activity-location">📍 线上</span>
+                            </div>
+                            <p class="activity-desc">俱乐部年度电竞赛事火热进行中，丰厚奖品等你来拿！多款热门游戏竞技，展现你的实力。</p>
+                            <div class="activity-stats">
+                                <span class="participants">👥 已报名: 256人</span>
+                                <span class="quota">名额: 500人</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#" class="btn btn-primary">立即报名</a>
+                                <a href="#" class="btn btn-secondary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="activity-card" data-status="upcoming" data-type="experience" data-location="beijing">
+                        <div class="activity-image">
+                            <img src="images/activity-2.jpg" alt="新品体验会">
+                            <span class="activity-badge upcoming">即将开始</span>
+                            <span class="activity-type">产品体验</span>
+                        </div>
+                        <div class="activity-content">
+                            <h3 class="activity-title">微星新品体验会 - 北京站</h3>
+                            <div class="activity-meta">
+                                <span class="activity-date">📅 2026-04-15 14:00</span>
+                                <span class="activity-location">📍 北京市朝阳区xxx大厦</span>
+                            </div>
+                            <p class="activity-desc">抢先体验微星最新发布的游戏本和显卡产品，现场还有技术专家讲解和互动环节。</p>
+                            <div class="activity-stats">
+                                <span class="participants">👥 已报名: 45人</span>
+                                <span class="quota">名额: 100人</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#" class="btn btn-primary">立即报名</a>
+                                <a href="#" class="btn btn-secondary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="activity-card" data-status="upcoming" data-type="online" data-location="online">
+                        <div class="activity-image">
+                            <img src="images/activity-3.jpg" alt="技术分享会">
+                            <span class="activity-badge upcoming">即将开始</span>
+                            <span class="activity-type">线上活动</span>
+                        </div>
+                        <div class="activity-content">
+                            <h3 class="activity-title">硬件超频技术分享会</h3>
+                            <div class="activity-meta">
+                                <span class="activity-date">📅 2026-04-20 19:00</span>
+                                <span class="activity-location">📍 线上直播</span>
+                            </div>
+                            <p class="activity-desc">资深硬件玩家分享超频技巧和经验，教你如何榨干硬件性能，提升游戏体验。</p>
+                            <div class="activity-stats">
+                                <span class="participants">👥 已报名: 128人</span>
+                                <span class="quota">名额: 无限制</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#" class="btn btn-primary">立即报名</a>
+                                <a href="#" class="btn btn-secondary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="activity-card" data-status="ongoing" data-type="offline" data-location="shanghai">
+                        <div class="activity-image">
+                            <img src="images/activity-4.jpg" alt="线下聚会">
+                            <span class="activity-badge ongoing">进行中</span>
+                            <span class="activity-type">线下活动</span>
+                        </div>
+                        <div class="activity-content">
+                            <h3 class="activity-title">上海会员线下聚会</h3>
+                            <div class="activity-meta">
+                                <span class="activity-date">📅 2026-04-05 至 2026-04-12</span>
+                                <span class="activity-location">📍 上海市浦东新区xxx</span>
+                            </div>
+                            <p class="activity-desc">上海地区会员专属线下聚会，面对面交流，分享使用心得，结识志同道合的朋友。</p>
+                            <div class="activity-stats">
+                                <span class="participants">👥 已报名: 32人</span>
+                                <span class="quota">名额: 50人</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#" class="btn btn-primary">立即报名</a>
+                                <a href="#" class="btn btn-secondary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="activity-card" data-status="ended" data-type="competition" data-location="online">
+                        <div class="activity-image">
+                            <img src="images/activity-5.jpg" alt="冬季电竞赛">
+                            <span class="activity-badge ended">已结束</span>
+                            <span class="activity-type">比赛竞技</span>
+                        </div>
+                        <div class="activity-content">
+                            <h3 class="activity-title">2025冬季电竞挑战赛</h3>
+                            <div class="activity-meta">
+                                <span class="activity-date">📅 2025-12-01 至 2025-12-31</span>
+                                <span class="activity-location">📍 线上</span>
+                            </div>
+                            <p class="activity-desc">2025年度冬季电竞赛事已圆满结束，感谢各位会员的积极参与！</p>
+                            <div class="activity-stats">
+                                <span class="participants">👥 参与人数: 480人</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#" class="btn btn-secondary">查看回顾</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="activity-card" data-status="ended" data-type="experience" data-location="guangzhou">
+                        <div class="activity-image">
+                            <img src="images/activity-6.jpg" alt="产品体验">
+                            <span class="activity-badge ended">已结束</span>
+                            <span class="activity-type">产品体验</span>
+                        </div>
+                        <div class="activity-content">
+                            <h3 class="activity-title">微星游戏本体验日 - 广州站</h3>
+                            <div class="activity-meta">
+                                <span class="activity-date">📅 2026-03-20 14:00</span>
+                                <span class="activity-location">📍 广州市天河区xxx</span>
+                            </div>
+                            <p class="activity-desc">广州站体验活动已圆满结束，会员们现场体验了最新的微星游戏本产品。</p>
+                            <div class="activity-stats">
+                                <span class="participants">👥 参与人数: 85人</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#" class="btn btn-secondary">查看回顾</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="load-more">
+                    <button class="btn btn-secondary btn-large">加载更多活动</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity-calendar">
+            <div class="container">
+                <h2 class="section-title">活动日历</h2>
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav prev">◀</button>
+                        <h3 class="calendar-month">2026年4月</h3>
+                        <button class="calendar-nav next">▶</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-weekdays">
+                            <span>日</span>
+                            <span>一</span>
+                            <span>二</span>
+                            <span>三</span>
+                            <span>四</span>
+                            <span>五</span>
+                            <span>六</span>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day empty"></div>
+                            <div class="calendar-day">1</div>
+                            <div class="calendar-day">2</div>
+                            <div class="calendar-day">3</div>
+                            <div class="calendar-day">4</div>
+                            <div class="calendar-day has-event">5</div>
+                            <div class="calendar-day">6</div>
+                            <div class="calendar-day">7</div>
+                            <div class="calendar-day">8</div>
+                            <div class="calendar-day">9</div>
+                            <div class="calendar-day">10</div>
+                            <div class="calendar-day">11</div>
+                            <div class="calendar-day">12</div>
+                            <div class="calendar-day">13</div>
+                            <div class="calendar-day">14</div>
+                            <div class="calendar-day has-event">15</div>
+                            <div class="calendar-day">16</div>
+                            <div class="calendar-day">17</div>
+                            <div class="calendar-day">18</div>
+                            <div class="calendar-day">19</div>
+                            <div class="calendar-day has-event">20</div>
+                            <div class="calendar-day">21</div>
+                            <div class="calendar-day">22</div>
+                            <div class="calendar-day">23</div>
+                            <div class="calendar-day">24</div>
+                            <div class="calendar-day">25</div>
+                            <div class="calendar-day">26</div>
+                            <div class="calendar-day">27</div>
+                            <div class="calendar-day">28</div>
+                            <div class="calendar-day">29</div>
+                            <div class="calendar-day">30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">中国微星俱乐部</h3>
+                    <p class="footer-desc">探索科技，分享激情，共创未来</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="微信">微信</a>
+                        <a href="#" class="social-link" aria-label="微博">微博</a>
+                        <a href="#" class="social-link" aria-label="QQ">QQ</a>
+                        <a href="#" class="social-link" aria-label="B站">B站</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="activities.html">活动中心</a></li>
+                        <li><a href="members.html">会员专区</a></li>
+                        <li><a href="index.html#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">帮助中心</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">会员须知</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">使用条款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">关注我们</h4>
+                    <div class="qr-code">
+                        <img src="images/qr-code.png" alt="微信公众号二维码">
+                        <p>扫码关注公众号</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 中国微星俱乐部. All rights reserved.</p>
+                <p>Powered by MSI Technology</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/activities.js"></script>
+</body>
+</html>

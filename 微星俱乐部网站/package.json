@@ -1,0 +1,33 @@
+{
+  "name": "msi-club-website",
+  "version": "1.0.0",
+  "description": "中国微星俱乐部官方网站",
+  "homepage": "https://yourusername.github.io/msi-club-website",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "deploy": "gh-pages -d frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MSI",
+    "微星",
+    "俱乐部",
+    "community"
+  ],
+  "author": "MSI Club",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "gh-pages": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
